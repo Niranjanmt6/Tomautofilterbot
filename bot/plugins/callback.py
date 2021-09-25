@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>⚜️CHECK LINKS AT @NEWMOVIESALWAYSHD ⚜️Found</i> <code>{leng}</code> <i>ഞാൻ കണ്ടത്തിയത് 😄:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
@@ -1677,7 +1677,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
+            InlineKeyboardButton('Home ⚜️', callback_data='start'),
             InlineKeyboardButton('Close 🔐', callback_data='close')
         ]]
         
@@ -1706,5 +1706,4 @@ def time_formatter(seconds: float) -> str:
         ((str(hours) + "h, ") if hours else "") + \
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s") if seconds else "")
-    return tmp
-
+    return tmp 
